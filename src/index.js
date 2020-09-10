@@ -18,8 +18,9 @@ const App = () => {
       .then(res => setCoinData(res.data))
       .catch(err => console.log(err));
   }, []);
+  // {darkmode ? "dark-mode App" : "App"}
   return (
-    <div className={darkmode ? "dark-mode App" : "App"}>
+    <div className="App">
       <Navbar />
       <Charts coinData={coinData} />
     </div>
